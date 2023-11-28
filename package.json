@@ -2,8 +2,8 @@
   "name": "hostname-natural-order",
   "version": "0.0.1",
   "description": "Natural order array of hostname",
-  "main": "./src/index.js",
-  "module": "./src/index.js",
+  "main": "./lib/index.js",
+  "module": "./lib/index.js",
   "scripts": {
     "test": "mocha --recursive test"
   },

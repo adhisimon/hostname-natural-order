@@ -2,7 +2,7 @@
 
 require('should');
 
-const compare = require('../src/compare');
+const compare = require('../lib/compare');
 
 describe('#compare', () => {
   it('should handle empty value', () => {
