@@ -1,0 +1,41 @@
+{
+  "name": "hostname-natural-order",
+  "version": "0.0.1",
+  "description": "Natural order array of hostname",
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "scripts": {
+    "test": "mocha --recursive test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adhisimon/hostname-natural-order.git"
+  },
+  "keywords": [
+    "human",
+    "sort",
+    "order",
+    "compare",
+    "natural-sort",
+    "natsort",
+    "hostname",
+    "domain"
+  ],
+  "author": "Adhidarma Hadiwinoto <me@adhisimon.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adhisimon/hostname-natural-order/issues"
+  },
+  "homepage": "https://github.com/adhisimon/hostname-natural-order#readme",
+  "devDependencies": {
+    "auto-changelog": "^2.4.0",
+    "eslint": "^8.54.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "mocha": "^10.2.0",
+    "should": "^13.2.3"
+  },
+  "dependencies": {
+    "natural-orderby": "^3.0.2"
+  }
+}
