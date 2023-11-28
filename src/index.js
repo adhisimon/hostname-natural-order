@@ -1,0 +1,1 @@
+exports.compare = require('./compare');
