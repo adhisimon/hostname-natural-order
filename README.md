@@ -19,9 +19,9 @@ npm i hostname-natural-order
 
 ## Usage
 
-Example:
-```javacscript
-const { compare } = require('hostname-natural-order');
+### Using Array.prototype.sort
+```javascript
+const { compare: compareHostname } = require('hostname-natural-order');
 
 const domains = [
   'test.org',
@@ -38,7 +38,7 @@ const domains = [
   '1.b.test.net',
 ];
 
-domains.sort(compare);
+domains.sort(compareHostname);
 console.log(JSON.stringify(domains, null, 2));
 ```
 
@@ -58,4 +58,35 @@ Will print:
   "example.org",
   "test.org"
 ]
+```
+
+### Using orderBy from natural-orderby
+
+```javascript
+const { compare: compareHostname } = require('hostname-natural-order');
+const { orderBy } = require('natural-orderby');
+
+const hostnameList = [
+  { name: '1.1.1.1' },
+  { name: '8.8.4.4' },
+  { name: '8.8.8.8' },
+  { name: '100.100.100.100' },
+  { name: 'net' },
+  { name: 'test.net' },
+  { name: 'a.test.net' },
+  { name: '1.b.test.net' },
+  { name: '2.b.test.net' },
+  { name: '100.b.test.net' },
+  { name: 'c.test.net' },
+  { name: 'c.test.net' },
+  { name: 'org' },
+  { name: 'example.org' },
+  { name: 'test.org' },
+];
+
+const hostnameListSorted = orderBy(
+  hostnameList,
+  (item) => item.name,
+  compareHostname,
+);
 ```
