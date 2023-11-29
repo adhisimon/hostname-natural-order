@@ -5,6 +5,14 @@
 [![Version npm](https://img.shields.io/npm/v/hostname-natural-order.svg)](https://www.npmjs.com/package/hostname-natural-order)
 [![Module type: CJS](https://img.shields.io/badge/module%20type-cjs-brightgreen)](https://github.com/voxpelli/badges-cjs-esm)
 
+- [hostname-natural-order](#hostname-natural-order)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Using Array.prototype.sort](#using-arrayprototypesort)
+    - [Using orderBy from natural-orderby](#using-orderby-from-natural-orderby)
+  - [Changelog](#changelog)
+  - [License](#license)
+
 # hostname-natural-order
 Natural order (sort) for array of hostnames.
 
