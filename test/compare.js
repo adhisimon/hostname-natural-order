@@ -26,10 +26,16 @@ describe('#compare', () => {
     compare('a.test.org', 'test.org').should.equal(1);
 
     const array1 = [
+      '1.1.1.1',
+      '8.8.4.4',
+      '8.8.8.8',
+      '100.100.100.100',
       'net',
       'test.net',
       'a.test.net',
       '1.b.test.net',
+      '2.b.test.net',
+      '100.b.test.net',
       'c.test.net',
       'c.test.net',
       'org',
