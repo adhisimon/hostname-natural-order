@@ -2,6 +2,7 @@
 
 require('should');
 
+const { orderBy } = require('natural-orderby');
 const compare = require('../lib/compare');
 
 describe('#compare', () => {
@@ -47,6 +48,37 @@ describe('#compare', () => {
     const itemCount = array1.length;
     for (let i = 0; i < itemCount; i += 1) {
       array1[i].should.equal(array2[i], `71D8517A iterate-${i}`);
+    }
+  });
+
+  it('should happily called by orderBy', () => {
+    const array1 = [
+      { name: '1.1.1.1' },
+      { name: '8.8.4.4' },
+      { name: '8.8.8.8' },
+      { name: '100.100.100.100' },
+      { name: 'net' },
+      { name: 'test.net' },
+      { name: 'a.test.net' },
+      { name: '1.b.test.net' },
+      { name: '2.b.test.net' },
+      { name: '100.b.test.net' },
+      { name: 'c.test.net' },
+      { name: 'c.test.net' },
+      { name: 'org' },
+      { name: 'example.org' },
+      { name: 'test.org' },
+    ];
+
+    const array2 = orderBy(
+      array1,
+      (item) => item.name,
+      compare,
+    );
+
+    const itemCount = array1.length;
+    for (let i = 0; i < itemCount; i += 1) {
+      array1[i].name.should.equal(array2[i].name, `DF063FC5 iterate-${i}`);
     }
   });
 });
