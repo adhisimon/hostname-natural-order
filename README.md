@@ -89,6 +89,12 @@ Will print:
 
 ### Using orderBy from natural-orderby
 
+Don't forget to install [natural-orderby](https://github.com/yobacca/natural-orderby) by at first.
+
+```
+npm i natural-orderby
+```
+
 ```javascript
 const { compare: compareHostname } = require('hostname-natural-order');
 const { orderBy } = require('natural-orderby');
