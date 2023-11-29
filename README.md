@@ -11,6 +11,7 @@
   - [Usage](#usage)
     - [Using Array.prototype.sort](#using-arrayprototypesort)
     - [Using orderBy from natural-orderby](#using-orderby-from-natural-orderby)
+  - [Limitation](#limitation)
   - [Changelog](#changelog)
   - [License](#license)
 
@@ -123,6 +124,11 @@ const hostnameListSorted = orderBy(
   compareHostname,
 );
 ```
+
+## Limitation
+This library assume and has been tested if strings to compare is a valid hostname or IP address. We don't check if it's not.
+Unknown result will happens if you don't validate the input.
+See [unit test](./test/) files.
 
 ## Changelog
 See [CHANGELOG.md](./CHANGELOG.md) file.
