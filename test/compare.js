@@ -16,14 +16,14 @@ describe('#compare', () => {
     compare('test.com', 'example.com').should.equal(1, 'BB5B40DE');
     compare('test.org', 'test.org').should.equal(0, 'D8F6E1DC');
 
-    compare('test1.org', 'test2.org').should.equal(-1);
-    compare('test2.org', 'test1.org').should.equal(1);
+    compare('test1.org', 'test2.org').should.equal(-1, 'A6C33CED');
+    compare('test2.org', 'test1.org').should.equal(1, 'E43282BA');
 
-    compare('test2.org', 'test100.org').should.equal(-1);
-    compare('test100.org', 'test2.org').should.equal(1);
+    compare('test2.org', 'test100.org').should.equal(-1, '30866EBA');
+    compare('test100.org', 'test2.org').should.equal(1, 'DAAF1F6D');
 
-    compare('test.org', 'a.test.org').should.equal(-1);
-    compare('a.test.org', 'test.org').should.equal(1);
+    compare('test.org', 'a.test.org').should.equal(-1, '82C688D5');
+    compare('a.test.org', 'test.org').should.equal(1, '656F94E4');
 
     const array1 = [
       '1.1.1.1',
