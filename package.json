@@ -5,7 +5,9 @@
   "main": "./lib/index.js",
   "module": "./lib/index.js",
   "scripts": {
-    "test": "mocha --recursive test"
+    "test": "mocha --recursive test",
+    "postversion": "git push && git push --tags",
+    "version": "auto-changelog -p && git add CHANGELOG.md",
   },
   "repository": {
     "type": "git",
