@@ -101,21 +101,21 @@ const { compare: compareHostname } = require('hostname-natural-order');
 const { orderBy } = require('natural-orderby');
 
 const hostnameList = [
-  { name: '1.1.1.1' },
-  { name: '8.8.4.4' },
-  { name: '8.8.8.8' },
-  { name: '100.100.100.100' },
-  { name: 'net' },
-  { name: 'test.net' },
-  { name: 'a.test.net' },
-  { name: '1.b.test.net' },
   { name: '2.b.test.net' },
-  { name: '100.b.test.net' },
-  { name: 'c.test.net' },
-  { name: 'c.test.net' },
-  { name: 'org' },
+  { name: 'test.net' },
+  { name: '1.b.test.net' },
+  { name: '8.8.4.4' },
+  { name: '100.100.100.100' },
   { name: 'example.org' },
+  { name: '100.b.test.net' },
+  { name: '8.8.8.8' },
   { name: 'test.org' },
+  { name: 'a.test.net' },
+  { name: 'c.test.net' },
+  { name: '1.1.1.1' },
+  { name: 'net' },
+  { name: 'org' },
+  { name: 'c.test.net' },
 ];
 
 const hostnameListSorted = orderBy(
