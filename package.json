@@ -7,7 +7,7 @@
   "scripts": {
     "test": "mocha --recursive test",
     "postversion": "git push && git push --tags",
-    "version": "auto-changelog -p && git add CHANGELOG.md",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
