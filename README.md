@@ -6,6 +6,7 @@
 [![Module type: CJS](https://img.shields.io/badge/module%20type-cjs-brightgreen)](https://github.com/voxpelli/badges-cjs-esm)
 
 - [hostname-natural-order](#hostname-natural-order)
+  - [When do you need this package?](#when-do-you-need-this-package)
   - [Installation](#installation)
   - [Usage](#usage)
     - [Using Array.prototype.sort](#using-arrayprototypesort)
@@ -16,8 +17,26 @@
 # hostname-natural-order
 Natural order (sort) for array of hostnames.
 
-
 This library is using compare function from [natural-orderby](https://github.com/yobacca/natural-orderby).
+
+## When do you need this package?
+You need it when you need to sort hostname list like this correctly:
+- www1.example.org
+- www2.example.org
+- www100.example.org
+- www200.example.org
+- www1.test.org
+- www2.test.org
+
+If you just use standard Array.prototype.sort, it would sort incorrectly and return:
+- www1.example.org
+- www1.test.org
+- www100.example.org
+- www2.example.org
+- www2.test.org
+- www200.example.org
+
+That order is not what you expect? Here come a package to order that correctly.
 
 ## Installation
 
