@@ -90,3 +90,9 @@ const hostnameListSorted = orderBy(
   compareHostname,
 );
 ```
+
+## Changelog
+See [CHANGELOG.md](./CHANGELOG.md) file.
+
+## License
+License under [MIT License](./LICENSE). Feel free to use and modified this library.
