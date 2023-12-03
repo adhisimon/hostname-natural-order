@@ -6,7 +6,7 @@
 [![node.js version](https://img.shields.io/node/v/hostname-natural-order)](https://www.npmjs.com/package/hostname-natural-order)
 ![node-lts](https://img.shields.io/node/v-lts/hostname-natural-order)
 [![License](https://img.shields.io/github/license/adhisimon/hostname-natural-order)](https://github.com/adhisimon/hostname-natural-order/blob/main/LICENSE)
-[![Unit test status](https://github.com/adhisimon/hostname-natural-order/actions/workflows/node.js.yml/badge.svg)](https://github.com/adhisimon/hostname-natural-order/actions/workflows/node.js.yml)
+[![Unit test status](https://github.com/adhisimon/hostname-natural-order/actions/workflows/node.js.yml/badge.svg)](https://github.com/adhisimon/hostname-natural-order/actions/workflows/node.js.yml?query=branch%3Amain)
 
 Natural order (natural sort) for array of hostnames.
 
@@ -131,6 +131,10 @@ const hostnameListSorted = orderBy(
 This library assume and has been tested if strings to compare is a valid hostname or IP address. We don't check if it's not.
 Unknown result will happens if you don't validate the input.
 See [unit test](./test/) files.
+
+It required node.js version > 16.x because we use [ip-toolkit](https://www.npmjs.com/package/ip-toolkit)
+who has requirement of node.js > 16.x. If you need to run it on older version of node.js, please raise an issue
+so I can know demand for that exists.
 
 ## Changelog
 See [CHANGELOG.md](./CHANGELOG.md) file.
