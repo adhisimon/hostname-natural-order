@@ -17,7 +17,7 @@
   - [License](#license)
 
 # hostname-natural-order
-Natural order (sort) for array of hostnames.
+Natural order (natural sort) for array of hostnames.
 
 This library is using compare function from [natural-orderby](https://github.com/yobacca/natural-orderby).
 
