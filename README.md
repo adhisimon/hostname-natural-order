@@ -1,4 +1,4 @@
-<!-- [![Minimum node.js version](https://badgen.net/npm/node/hostname-natural-order)](https://www.npmjs.com/package/hostname-natural-order) -->
+[![Minimum node.js version](https://badgen.net/npm/node/hostname-natural-order)](https://www.npmjs.com/package/hostname-natural-order)
 [![Version npm](https://img.shields.io/npm/v/hostname-natural-order.svg)](https://www.npmjs.com/package/hostname-natural-order)
 [![Npm package total downloads](https://img.shields.io/npm/dt/hostname-natural-order)](https://npmjs.com/package/hostname-natural-order)
 [![Module type: CJS](https://img.shields.io/badge/module%20type-cjs-brightgreen)](https://github.com/voxpelli/badges-cjs-esm)
