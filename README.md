@@ -1,3 +1,5 @@
+# hostname-natural-order
+
 [![Version npm](https://img.shields.io/npm/v/hostname-natural-order.svg)](https://www.npmjs.com/package/hostname-natural-order)
 [![Npm package total downloads](https://img.shields.io/npm/dt/hostname-natural-order)](https://npmjs.com/package/hostname-natural-order)
 [![Module type: CJS](https://img.shields.io/badge/module%20type-cjs-brightgreen)](https://github.com/voxpelli/badges-cjs-esm)
@@ -6,7 +8,9 @@
 [![License](https://img.shields.io/github/license/adhisimon/hostname-natural-order)](https://github.com/adhisimon/hostname-natural-order/blob/main/LICENSE)
 [![Unit test status](https://github.com/adhisimon/hostname-natural-order/actions/workflows/node.js.yml/badge.svg)](https://github.com/adhisimon/hostname-natural-order/actions/workflows/node.js.yml)
 
+Natural order (natural sort) for array of hostnames.
 
+This library is using compare function from [natural-orderby](https://github.com/yobacca/natural-orderby).
 
 - [hostname-natural-order](#hostname-natural-order)
   - [When do you need this package?](#when-do-you-need-this-package)
@@ -17,11 +21,6 @@
   - [Limitation](#limitation)
   - [Changelog](#changelog)
   - [License](#license)
-
-# hostname-natural-order
-Natural order (natural sort) for array of hostnames.
-
-This library is using compare function from [natural-orderby](https://github.com/yobacca/natural-orderby).
 
 ## When do you need this package?
 You need it when you need to sort hostname list like this correctly:
