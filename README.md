@@ -4,7 +4,6 @@
 [![Npm package total downloads](https://img.shields.io/npm/dt/hostname-natural-order)](https://npmjs.com/package/hostname-natural-order)
 [![Module type: CJS](https://img.shields.io/badge/module%20type-cjs-brightgreen)](https://github.com/voxpelli/badges-cjs-esm)
 [![node.js version](https://img.shields.io/node/v/hostname-natural-order)](https://www.npmjs.com/package/hostname-natural-order)
-![node-lts](https://img.shields.io/node/v-lts/hostname-natural-order)
 [![License](https://img.shields.io/github/license/adhisimon/hostname-natural-order)](https://github.com/adhisimon/hostname-natural-order/blob/main/LICENSE)
 [![Unit test status](https://github.com/adhisimon/hostname-natural-order/actions/workflows/node.js.yml/badge.svg)](https://github.com/adhisimon/hostname-natural-order/actions/workflows/node.js.yml?query=branch%3Amain)
 
