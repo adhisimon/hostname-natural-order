@@ -1,9 +1,10 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org)
-[![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)](https://eslint.org)
-
+<!-- [![Minimum node.js version](https://badgen.net/npm/node/hostname-natural-order)](https://www.npmjs.com/package/hostname-natural-order) -->
 [![Version npm](https://img.shields.io/npm/v/hostname-natural-order.svg)](https://www.npmjs.com/package/hostname-natural-order)
+[![Npm package total downloads](https://img.shields.io/npm/dt/hostname-natural-order)](https://npmjs.com/package/hostname-natural-order)
 [![Module type: CJS](https://img.shields.io/badge/module%20type-cjs-brightgreen)](https://github.com/voxpelli/badges-cjs-esm)
+[![GitHub License](https://img.shields.io/github/license/adhisimon/hostname-natural-order)](https://github.com/adhisimon/hostname-natural-order/blob/main/LICENSE)
+
+
 
 - [hostname-natural-order](#hostname-natural-order)
   - [When do you need this package?](#when-do-you-need-this-package)
