@@ -128,9 +128,11 @@ const hostnameListSorted = orderBy(
 ```
 
 ## Limitation
-This library assume and has been tested if strings to compare is a valid hostname or IP address. We don't check if it's not.
-Unknown result will happens if you don't validate the input.
-See [unit test](./test/) files.
+This library expect and has been tested if strings to compare is a valid hostname or IP address
+(validate ip addresses using [ip-toolkit](https://www.npmjs.com/package/ip-toolkit)).
+
+Unexpected results might be happen if you don't validate the input.
+See [unit test](./test/) files for what we've test.
 
 It required node.js version > 16.x because we use [ip-toolkit](https://www.npmjs.com/package/ip-toolkit)
 who has requirement of node.js > 16.x. If you need to run it on older version of node.js, please raise an issue
