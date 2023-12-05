@@ -16,7 +16,7 @@ This library is using compare function from [natural-orderby](https://github.com
   - [Installation](#installation)
   - [Usage](#usage)
     - [Using Array.prototype.sort](#using-arrayprototypesort)
-    - [Using orderBy from natural-orderby](#using-orderby-from-natural-orderby)
+    - [Natural order/sort array of object](#natural-ordersort-array-of-object)
   - [Limitation](#limitation)
   - [Changelog](#changelog)
   - [License](#license)
@@ -89,17 +89,11 @@ Will print:
 ]
 ```
 
-### Using orderBy from natural-orderby
-
-Don't forget to install [natural-orderby](https://github.com/yobacca/natural-orderby) by at first.
-
-```
-npm i natural-orderby
-```
+### Natural order/sort array of object
+Since v1.1.0, this package export "orderBy" method so you can order array of object easily.
 
 ```javascript
-const { compare: compareHostname } = require('hostname-natural-order');
-const { orderBy } = require('natural-orderby');
+const { orderBy } = require('hostname-natural-order');
 
 const hostnameList = [
   { name: '2.b.test.net' },
@@ -121,8 +115,8 @@ const hostnameList = [
 
 const hostnameListSorted = orderBy(
   hostnameList,
+  // example to order by "name" property
   (item) => item.name,
-  compareHostname,
 );
 ```
 
