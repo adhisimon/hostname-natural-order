@@ -2,5 +2,5 @@
 /.vscode/
 /test/
 /.eslintrc.js
-/.npmignore
+/npmignore
 /CHANGELOG.md
