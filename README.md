@@ -17,6 +17,9 @@ This library is using compare function from [natural-orderby](https://github.com
   - [Usage](#usage)
     - [Using Array.prototype.sort](#using-arrayprototypesort)
     - [Natural order/sort array of object](#natural-ordersort-array-of-object)
+  - [Command-Line Interface (CLI)](#command-line-interface-cli)
+    - [CLI Installation](#cli-installation)
+    - [CLI Usage](#cli-usage)
   - [Limitation](#limitation)
   - [Changelog](#changelog)
   - [License](#license)
@@ -41,7 +44,6 @@ If you just use standard Array.prototype.sort, it would sort incorrectly and ret
 That order is not what you expect? Here come a package to order that correctly.
 
 ## Installation
-
 ```
 npm i hostname-natural-order
 ```
@@ -118,6 +120,32 @@ const hostnameListSorted = orderBy(
   // example to order by "name" property
   (item) => item.name,
 );
+```
+
+## Command-Line Interface (CLI)
+This module provide CLI tool so you can use it from CLI shell directly without programming any code.
+
+### CLI Installation
+```shell
+sudo npm i --global hostname-natural-order
+```
+
+### CLI Usage
+
+```shell
+hostname-natural-order microsoft.com example.org google.com
+```
+
+It will print:
+```
+google.com
+microsoft.com
+example.org
+```
+
+This program can also read hostname list from file. Just pipe "cat" output.
+```shell
+cat hostnames.txt | hostname-natural-order
 ```
 
 ## Limitation

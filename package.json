@@ -4,6 +4,9 @@
   "description": "Natural order (sort) array of hostname",
   "main": "./lib/index.js",
   "module": "./lib/index.js",
+  "bin": {
+    "hostname-natural-order": "bin/hostname-natural-order.js"
+  },
   "scripts": {
     "test": "mocha --recursive test",
     "test-watch": "mocha --watch --recursive test",
